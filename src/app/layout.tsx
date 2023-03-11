@@ -1,4 +1,6 @@
-import './globals.css'
+import '@/styles/globals.css'
+import {ReactNode} from 'react'
+import Providers from '@/providers'
 
 export const metadata = {
   title: 'Create Next App',
@@ -8,11 +10,15 @@ export const metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: ReactNode
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Providers>
+          {children}
+        </Providers>
+      </body>
     </html>
   )
 }
