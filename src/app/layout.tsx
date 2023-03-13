@@ -13,7 +13,10 @@ export default function RootLayout({
     <html lang="en">
       <body className='relative flex flex-col items-center gap-10 bg-todo-lightMode-blue-lightest dark:bg-todo-darkMode-blue-darkest md:gap-12'>
         <div
-          className={`absolute z-0 h-[200px] w-full bg-center bg-no-repeat bg-[url('/images/bg-desktop-dark.jpg')] md:h-[250px] md:bg-[auto_100%] lg:h-[300px] xl:bg-[100%_auto]`}
+          className={`absolute z-0 h-[200px] w-full bg-center bg-no-repeat md:h-[250px] md:bg-[auto_100%] lg:h-[300px] xl:bg-[100%_auto]`}
+          style={{
+            backgroundImage: "url('/images/bg-desktop-dark.jpg')"
+          }}
         />
         <Providers>
           <Header />
