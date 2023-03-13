@@ -5,6 +5,9 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
+    fontFamily: {
+      'todo': ['Josefin Sans', 'sans-serif']
+    },
     extend: {
       colors: {
         'todo': {
@@ -32,5 +35,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }
